@@ -1,0 +1,642 @@
+/* GLOBAL ============================================================================== */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+/* lodging  ============================================================================= */
+/* lodging  ============================================================================= */
+/* lodging  ============================================================================= */
+
+.top {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #f1eded;
+  z-index: 5555555555555;
+  animation: 1s top;
+  animation-fill-mode: forwards;
+}
+.bottom {
+  position: fixed;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  top: 0%;
+  background-color: #f1eded;
+  z-index: 5555555555555;
+  animation: 1s bottom;
+  animation-fill-mode: forwards;
+}
+
+.lodging {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  border: 10px solid;
+  background-color: transparent;
+  background-color: rgb(22, 22, 22) #f7f7f7 #f7f7f7 #f7f7f7;
+  border-radius: 50%;
+  z-index: 888888888888888888;
+  animation: 1s load infinite, 1.5s 1.5s load2;
+  animation-fill-mode: forwards;
+}
+
+@keyframes load {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes load2 {
+  from {
+    display: block;
+  }
+
+  to {
+    display: none;
+  }
+}
+
+@keyframes top {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes bottom {
+  from {
+    bottom: 50%;
+  }
+
+  to {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
+
+/* lodging  ============================================================================= */
+/* lodging  ============================================================================= */
+/* lodging  ============================================================================= */
+/* lodging  ============================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.icons {
+  color: #f2f2f2;
+}
+.icons:hover {
+  background-color: #fff9f9f1;
+  color: rgb(21 44 54);
+}
+
+/***********************NAVBAR*********************************/
+
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.navbar .container-fluid .navbar-brand {
+  letter-spacing: 2px;
+  font-weight: 800 !important;
+}
+
+.navbar .navbar-collapse li a {
+  font-family: "Poppins", sans-serif;
+  line-height: 20px;
+  position: relative;
+}
+.navbar-toggler span {
+  color: whit !important;
+}
+.navbar .navbar-nav > li > a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav > li .active:after {
+  width: 88%;
+}
+
+span:hover {
+  background-color: #000000;
+}
+/**************************************HOME**********************************/
+
+.Home {
+  background-image: url(../imgs/bg.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.Larry::after {
+  content: "";
+  animation: typing 2s infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "L";
+  }
+
+  10% {
+    content: "La";
+  }
+
+  25% {
+    content: "Larr";
+  }
+
+  40% {
+    content: "Larry";
+  }
+
+  50% {
+    content: "Larry ";
+  }
+
+  60% {
+    content: "Larry";
+  }
+
+  70% {
+    content: "Larry";
+  }
+
+  80% {
+    content: "Larry Dan";
+  }
+
+  90% {
+    content: "Larry Dani";
+  }
+
+  100% {
+    content: "Larry Danil";
+  }
+}
+
+.Home .overlay .Larry {
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400 !important;
+}
+
+.Home .overlay span {
+  font-weight: 200 !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.66);
+  height: 100vh;
+}
+
+.Home .overlay .caption h5 {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.Home .overlay .caption a span {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 60px;
+}
+
+/*********************************** ABOUT************************/
+
+.About .container .caption {
+  width: 55% !important;
+}
+.About h3 {
+  font-weight: 850 !important;
+}
+.About .title-cv .web::after {
+  content: "90%";
+  position: absolute;
+  top: 7px;
+  right: 75px;
+}
+
+.About .title-cv .branding::after {
+  content: "85%";
+  position: absolute;
+  top: 7px;
+  right: 140px;
+}
+
+.About .title-cv .development::after {
+  content: "95%";
+  position: absolute;
+  top: 7px;
+  right: 55px;
+}
+.About .progress {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+.About .container .btn-primary,
+.btn-secondary {
+  transition: 0.5s;
+}
+
+.About .container .btn-primary:hover {
+  background-color: white !important;
+  border: black 1px solid !important;
+  color: black !important;
+  border-radius: 5px;
+}
+
+.About .container .btn-secondary:hover {
+  background-color: black !important;
+  border: black 1px solid !important;
+  color: white !important;
+  border-radius: 5px;
+}
+
+.About .par .web,
+.branding,
+.development {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.About .container .hero-phot:after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 20px;
+  bottom: -30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+/***************************   SERVICES    **********************************/
+
+.Services .container h3 {
+  font-weight: 900 !important;
+  position: relative;
+}
+
+.Services .container {
+  width: 78% !important;
+}
+
+.Services .container .icon {
+  color: #1e1e1e;
+  height: 70px;
+  width: 70px;
+  background-color: #f4f4f4;
+  line-height: 1.55;
+  transition: all 0.5s;
+  margin-top: 30px;
+}
+
+.Services .container .icon p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.Services .container .card {
+  border: none;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+.Services .container .card:hover .icon {
+  color: white;
+  background-color: black;
+}
+
+.Services h6 {
+  font-weight: 800 !important;
+}
+
+.Services p {
+  font-size: 14px;
+  word-spacing: 2px;
+  font-weight: 400 !important;
+}
+
+.Services .container .title h3:after {
+  content: "";
+  margin: auto;
+  width: 17%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 41%;
+  z-index: -1;
+}
+/*****************************WORKS***************************************/
+.portfolio .container {
+  width: 75%;
+}
+.portfolio h2 {
+  font-weight: 900 !important;
+}
+.portfolio .container .main-title h3 {
+  font-weight: 900px !important;
+}
+.portfolio .item-img:hover .layer-items {
+  opacity: 1;
+  top: 1%;
+}
+.portfolio .layer-items {
+  width: 98%;
+  height: 98%;
+  top: 5%;
+  left: 1%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.area-item {
+  margin: 30% 0;
+}
+.dots h2::after {
+  content: "";
+  width: 18%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 41%;
+  z-index: -1;
+}
+.portfolio .icon {
+  font-size: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: #000000 solid 1px;
+  background-color: #000000;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio .icon:hover {
+  border: #000000 solid 1px;
+  background-color: #383535;
+}
+.titel-item {
+  transform: translateY(-50%);
+}
+.item-img:hover .titel-item {
+  transform: translateY(0%);
+  transition: all 0.5s;
+  padding-bottom: 0;
+}
+.nav-pills .nav-link.active {
+  background-color: transparent;
+}
+/*********************client*********************/
+
+.clients .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  transition: 1s;
+}
+.Clients h2 {
+  font-weight: 900 !important;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #869791;
+}
+.Clients .carousel-indicators button:hover {
+  background-color: #1c1c1c;
+}
+
+/************************NUMS**************************/
+.nums .container {
+  width: 70%;
+}
+.nums .card {
+  width: 33.33%;
+}
+.nums .icon h3 {
+  font-weight: 900 !important;
+}
+/* <!-- ---------section---team --------------> */
+.Team .container {
+  width: 77%;
+}
+.Team h2 {
+  font-weight: 900 !important;
+}
+.Team .card {
+  border: none !important;
+  border-radius: 0 !important;
+}
+.icon-counter {
+  font-size: 30px;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+}
+.counter-p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.hover-card img {
+  transition: all 0.6s;
+}
+.imgarea:hover img {
+  transform: scale(1.3);
+}
+.Team .leyar {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background-color: #f2f2f2;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+.Team .hover-card .leyar {
+  transition: all 0.6s;
+}
+.Team .hover-card:hover .leyar {
+  width: 98%;
+  height: 98%;
+  top: 1%;
+  left: 1%;
+  opacity: 0.9;
+  transform: rotatey(360deg) scale(1, 1);
+}
+.Team .icons ul {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50%;
+  padding-left: 18%;
+  gap: 25px;
+}
+.Team .icons ul li a {
+  font-size: 20px;
+  color: #ffffff;
+}
+.Team .social {
+  width: 40px;
+  height: 40px;
+}
+.Team .social:hover {
+  background-color: #f7f7f7 !important;
+  border: 1px solid black;
+  color: #000000;
+  transition: 0.5s all;
+}
+.Team .social:hover a {
+  color: #000000;
+  transition: 0.5s all;
+}
+
+/***********************************************contact***************/
+.Contact .container {
+  width: 70%;
+}
+.Contact .container h3:after {
+  content: "";
+  width: 24%;
+  height: 80%;
+  position: absolute;
+  left: 38%;
+  bottom: -10px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.Contact .container div.icon {
+  width: 60px !important;
+  height: 60px !important;
+  background: #f4f4f4;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.contact h3 {
+  font-weight: 900 !important;
+}
+.Contact .row div.icon i {
+  font-size: 25px;
+}
+
+.Contact .row h6 {
+  font-size: 16px;
+  line-height: 17.6px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Contact .row p {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: RGB(116, 129, 130);
+}
+
+.Contact .container h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 900;
+  color: RGB(52, 52, 52);
+}
+
+.contact form .col-md-6 input {
+  background: #f4f4f4;
+}
+
+.contact form textarea {
+  height: 160px;
+  max-height: 160px;
+  max-width: 100%;
+  background: #f4f4f4;
+}
+
+form {
+  width: 100%;
+  border: none !important;
+}
+
+#inputEmail4,
+#inputPassword4,
+#inputAddress {
+  border: none;
+}
+
+.Contact form button {
+  width: 150px !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 1px rgba(0, 0, 0, 0.075);
+  transition-duration: 0.8s;
+}
+
+.Contact form button:hover {
+  background-color: rgba(255, 255, 255, 0.404);
+  color: black;
+  border: 2px black solid;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.Contact .row .add:hover .icon {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.993);
+}
+
+/**********footer****************/
+footer {
+  background-color: #1c1c1c;
+  color: #748182;
+  font-size: 13px;
+  line-height: 20.8px;
+  word-spacing: 2px;
+  font-weight: 400;
+}
+
+.navbar-toggler {
+  color: #ffffff;
+  background-color: #f7f7f7;
+}
